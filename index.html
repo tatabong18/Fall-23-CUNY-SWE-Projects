@@ -1,176 +1,50 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlantzTribe</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{css/style.css}"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SignUp Form</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-
-<section style="background: url('Images/hero 5.jpg'); height: 800px; position:relative; background-size: 100% 100%;">
-
-
-    <!-- Add text on top of the image -->
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: black;">
-        <h1>Heal Your Body With Plants</h1>
-        <h3>let me teach you how!</h3>
-        <!-- You can add more text or elements as needed -->
-    </div>
-
-
-      <!-- <h1 style="postion:absolute; top:9%">Applle</h1> -->
-      
-
-      <nav style="postion:absolute; top:1%; right:1%;"><img src="" alt=""></nav>
-      
-
-      <!-- <h2>Some text</h2> -->
-
-
-      
-
-</section>
-
-
-
-
-<div class="header">
-    <div class="container-fluid">
-        <div class="navbar">
-            <!-- <div class="logo">
-                <img src="Images/Plantztribelogo.png" width="60px">
-                     </div> -->
-            <nav class="navbar navbar-expand-sm fixed-top">
-
-
-
-                <div>
-                    <ul class="navbar-nav">
-                        <div class="logo">
-                            <img src="Images/Plantztribelogo.png" width="60px">
-                                 </div>
-                        <ul id="MenuItems">
-                            <ul class="sub-menu">
-                                <a th:href="@{/}">Home</a>
-                                <a th:href="@{/product}">Recipes</a> 
-                                <a th:href="@{/aboutUs}">About Us</a>
-                                <a th:href="@{/account}">Account</a>
-                            
-
-                            </ul>
-
-                        </ul>
-
-                    </ul>
-
-                </div>
-            </nav>
-          
-            
-          
-        <section>
-    
-              
-                <div class="col-sm-4">
-                 
-            
-                  
-                </div>
-
-            </div>
-        </section>
-    </div>
-
-</div>
-
-<div class="container">
-    <!-- Add text on top of the 3 cards area -->
-    <div style="text-align: center; margin-top: 50px;">
-        <h2>Check Out Our Latest Blog Posts!</h2>
-        <!-- You can add more text or elements as needed -->
-    </div>
-
-<!------------------ 3 cards layout starts here --------------->
-
-<div class="row">
-
-    <div class="col-sm-4  card">
-        <div class="card__header">
-          <img src="Images/Hero3.jpg" alt="card__image" class="card__image" width="400">
-        </div>
-        <div class="card__body">
-    
-          <h4>Delicious Smoothie Recipe</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Sequi perferendis molestiae non nemo doloribus.<br> Doloremque, nihil! At ea atque quidem!</p>
-        </div>
-        <button>Read More</button>
+  <div class="signupFrm">
+    <form action="" class="form">
+      <div class="tab-group">
+        <button class="tab active" onclick="openTab('signup')">Sign Up</button>
+        <button class="tab" onclick="openTab('login')">Log In</button>
       </div>
-    
-    <div class="col-sm-4  card">
-      <div class="card__header">
-        <img src="Images/Hero3.jpg" alt="card__image" class="card__image" width="400">
-      </div>
-      <div class="card__body">
-        
-        <h4>Delicious Smoothie Recipe</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Sequi perferendis molestiae non nemo doloribus.<br> Doloremque, nihil! At ea atque quidem!</p>
-      </div>
-      <button>Read More</button>
-    </div>
-   
 
-    <div class="col-sm-4  card">
-        <div class="card__header">
-          <img src="Images/Hero3.jpg" alt="card__image" class="card__image" width="400">
+      <h1>Sign Up for Free</h1>
+
+      <div class="field-wrap">
+        <div class="name-field">
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
         </div>
-        <div class="card__body">
-        
-          <h4>Delicious Smoothie Recipe</h4>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Sequi perferendis molestiae non nemo doloribus.<br> Doloremque, nihil! At ea atque quidem!</p>
-        </div>
-        <button>Read More</button>
       </div>
-     
 
+      <div class="field-wrap">
+        <input type="email" placeholder="Email Address" required />
+      </div>
 
-      
-      <!-- <div class="row bg-primary">
-      
-          <div class="col-sm-4">
-              <h1>Title</h1>
-              <img src="" alt="product image">
-              <br>
-              <button>Submit</button>
-          </div>
-          <div class="col-sm-4">
-              <h1>Title</h1>
-              <img src="" alt="product image">
-              <br>
-              <button>Submit</button>
-          </div>
-             <div class="col-sm-4">
-              <h1>Title</h1>
-              <img src="" alt="product image">
-              <br>
-              <button>Submit</button>
-          </div>
-      </div> -->
-      
+      <div class="field-wrap">
+        <input type="password" placeholder="Set A Password" required />
+      </div>
 
+      <button type="submit" class="button button-block">Get Started</button>
+    </form>
+  </div>
 
+  <script>
+    function openTab(tabName) {
+      var tabs = document.getElementsByClassName("tab");
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove("active");
+      }
 
-
-
-
-
-<!----------3 cards layout ends--------------->
-
-
-</script>
+      document.querySelector('.tab-group button[data-tab="' + tabName + '"]').classList.add("active");
+    }
+  </script>
 </body>
 </html>
