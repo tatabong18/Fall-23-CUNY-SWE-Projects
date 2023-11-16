@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantzTribe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/images/plantztribe logo.png">
+
+    <!-- Link to your CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{css/style.css}"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Link to your JavaScript -->
+    <script src="js/script.js"></script>
+
+    <style>
+        /* Add your custom styles here */
+        .card button {
+            background-color: #4CAF50; /* Green color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .card button:hover {
+            background-color: #45a049; /* Darker green color on hover */
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="header">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm fixed-top">
+            <div class="logo">
+                <img src="plantztribe logo.png" width="70px">
+            </div>
+
+            <!--  class Menu container -->
+            <div class="Menu-container">
+                <ul id="MenuItems">
+                    <ul class="sub-menu">
+                        
+                        <a href="index.html">Home</a>
+                        <a href="form.html">Recipes</a>
+                        <a href="form.html">About Us</a>
+                        <a href="form.html">Sign In</a>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+    <div style="text-align: center; margin-top: 50px;">
+        <h2>Read Our Latest Blog Posts!</h2>
+    </div>
+
+    <!-- 3 cards layout starts here -->
+    <div class="row">
+        <div class="col-sm-4 card">
+            <div class="card__header">
+                <img src="Images/3cardsmoothie.png" alt="card__image" class="card__image" width="400">
+            </div>
+            <div class="card__body">
+                <h4>Kale Smoothie Recipe</h4>
+                Energize Your Day: A refreshing kale, ginger and pineapple green smoothie recipe. No need for coffee, this is a natural way to get that energy boost.</a></h2>
+               
+            </div>
+            <button onclick="window.open('https://www.instagram.com/plantztribe', '_blank')">Read More</button>
+        </div>
+
+        <div class="col-sm-4 card">
+            <div class="card__header">
+                <img src="Images/3cardsmoothie.png" alt="card__image" class="card__image" width="400">
+            </div>
+            <div class="card__body">
+                <h4>Cucumber Mint Smoothie</h4>
+                <p>Cucumber and mint infused smoothie for a healthy Boost, the combination of mint and cucumber is a win win.</a></h2>
+  
+            </div>
+            <button onclick="window.open('https://www.instagram.com/plantztribe', '_blank')">Read More</button>
+        </div>
+
+        <div class="col-sm-4 card">
+            <div class="card__header">
+                <img src="Images/3cardsmoothie.png" alt="card__image" class="card__image" width="400">
+            </div>
+            <div class="card__body">
+                <h4>Detox Green Smoothie</h4>
+                <p>Detox Green Juice: The ultimate detox green smoothie delight, we gaurantee it will become one of your favorite go to smoothies.</a></h2>
+                    
+            </div>
+            <button onclick="window.open('https://www.instagram.com/plantztribe', '_blank')">Read More</button>
+        </div>
+    </div>
+    <!-- 3 cards layout ends -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* css for form */
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #4CAF50;
+  font-family: "Lato", sans-serif;
+  color: black;
+}
+
+.signupFrm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.tab-group {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #2E8B57;
+}
+
+.form {
+  background-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.name-field {
+  display: flex;
+}
+
+input {
+  width: 100%; 
+  padding: 10px;
+  margin-top: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: black;
+}
+
+input:focus {
+  border: 2px solid #4CAF50;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #2E8B57;
+}
+
+
+
+
+
+/* css for index */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #000800;
+}
+
+a {
+    color: #00080f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the "Read More" links */
+.read-more {
+    display: block;
+    color: #4CAF50;
+    margin-top: 10px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+/* Styles for the login button */
+
+/* .login-container {
+    display: flex;
+    align-items: center; */
+/* }
+
+.login-button {
+    background-color: #00b345;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: auto; /* Push the login button to the right */
+
+
+.login-button:hover {
+    background-color: #00923e; /* Darker green color on hover */
+} 

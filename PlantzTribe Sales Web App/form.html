@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SignUp Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="signupFrm">
+    <form action="" class="form">
+      <div class="tab-group">
+        <button class="tab active" onclick="openTab('signup')">Sign Up</button>
+        <button class="tab" onclick="openTab('login')">Log In</button>
+      </div>
+
+      <h1>Sign Up for Free</h1>
+
+      <div class="field-wrap">
+        <div class="name-field">
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
+        </div>
+      </div>
+
+      <div class="field-wrap">
+        <input type="email" placeholder="Email Address" required />
+      </div>
+
+      <div class="field-wrap">
+        <input type="password" placeholder="Set A Password" required />
+      </div>
+
+      <button type="submit" class="button button-block">GET STARTED</button>
+    </form>
+  </div>
+
+  <script>
+    function openTab(tabName) {
+      var tabs = document.getElementsByClassName("tab");
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove("active");
+      }
+
+      document.querySelector('.tab-group button[data-tab="' + tabName + '"]').classList.add("active");
+    }
+  </script>
+</body>
+</html>
